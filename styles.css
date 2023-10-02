@@ -79,9 +79,6 @@ nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-/* Adicione este código CSS ao final do seu arquivo styles.css */
-
-/* Efeito de aumento apenas na imagem com a classe 'foto-com-efeito' */
 .foto-com-efeito {
     transition: transform 0.3s ease;
 }
