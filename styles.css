@@ -109,3 +109,62 @@ nav a:hover, footer a:hover {
 .navbar-nav .nav-link:hover::after {
     transform: scaleX(1);
 }
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card-com-efeito {
+    position: relative;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.card-com-efeito:hover {
+    transform: scale(1.05);
+}
+
+.card-com-efeito .card-text {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.card-com-efeito:hover .card-text {
+    opacity: 0;
+}
+
+.card-com-efeito .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.card-com-efeito:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.overlay-button:hover {
+    background-color: #333;
+    color: #fff;
+}
