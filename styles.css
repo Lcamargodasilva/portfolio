@@ -168,3 +168,15 @@ nav a:hover, footer a:hover {
     background-color: #333;
     color: #fff;
 }
+
+.btn-download {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #8c8c8c;
+    transform: scale(1.1);
+}
