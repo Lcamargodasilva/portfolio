@@ -180,3 +180,20 @@ nav a:hover, footer a:hover {
     background-color: #8c8c8c;
     transform: scale(1.1);
 }
+
+.typing-text::after {
+    content: "|";
+    animation: blinkCursor 0.7s infinite;
+    font-size: 24px;
+  }
+  
+  @keyframes blinkCursor {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  
